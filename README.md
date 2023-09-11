@@ -71,3 +71,10 @@ ini merupakan methode untuk mereset transaksi
         self.transaction_data = []
 ```
 
+
+
+
+# Cara Menjalakan Aplikasi
+Dengan menjalankan script .......... di [JUPYTER](https://jupyter.org/try-jupyter/lab/index.html)
+
+
