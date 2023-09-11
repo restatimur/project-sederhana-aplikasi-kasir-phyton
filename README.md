@@ -75,6 +75,60 @@ ini merupakan methode untuk mereset transaksi
 
 
 # Cara Menjalakan Aplikasi
-Dengan menjalankan script .......... di [JUPYTER](https://jupyter.org/try-jupyter/lab/index.html)
+Dengan menjalankan script aplikasi-kasir.ipynb di [JUPYTER](https://jupyter.org/try-jupyter/lab/index.html)
 
+## Kasus 1
+Cek penambahan item
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 75000)
+trnsct_123.check_out()
+```
 
+## Kasus 2
+Cek Update item
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 75000)
+trnsct_123.update_item_qty("Barang 1", 4)
+trnsct_123.check_out()
+```
+
+## Kasus 3
+Cek Delete item
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 75000)
+trnsct_123.delete_item("Barang 2")
+trnsct_123.check_out()
+```
+
+## Kasus 4
+Cek Diskon 5%
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 55000)
+trnsct_123.check_out()
+```
+
+## Kasus 5
+Cek Diskon 6%
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 75000)
+trnsct_123.check_out()
+```
+
+## Kasus 6
+Cek Diskon 7%
+```sh
+trnsct_123.add_item("Barang 1", 2, 50000)
+trnsct_123.add_item("Barang 2", 3, 75000)
+trnsct_123.check_out()
+```
+
+## Reset Transaksi
+Setiap mencoba kasus jangan lupa melakukan reset transaksi
+```sh
+trnsct_123.reset_transaction()
+```
